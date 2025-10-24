@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PDF Viewer (Custom Background)</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { background: #cfdbc2; } 
+    .viewer-wrap {
+      height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      padding: 0;
+    }
+    .viewer {
+      width: 100%;
+      max-width: 1200px;
+      height: 100%;
+      background: #bcced1; 
+      border: none;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+      display: block;
+    }
+    iframe.viewer { display: block; }
+  </style>
+</head>
+<body>
+  <div class="viewer-wrap">
+    <iframe
+      class="viewer"
+      src="Child Assent Form-Phase 3 Time 0.pdf#zoom=100"
+      title="PDF Viewer"
+    ></iframe>
+  </div>
+</body>
+</html>
